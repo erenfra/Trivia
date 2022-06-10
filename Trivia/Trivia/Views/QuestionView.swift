@@ -11,7 +11,7 @@ struct QuestionView: View {
     @EnvironmentObject var triviaManager: TriviaManager
     
     var body: some View {
-        VStack (spacing: 40) {
+        VStack (spacing: 20) {
             HStack {
                 Text("Trivia Game")
                     .lilacTitle()
@@ -44,7 +44,7 @@ struct QuestionView: View {
                 PrimaryButton(text: "Next", background: triviaManager.answerSelected ? Color("AccentColor") : Color(hue: 1.0, saturation: 0.0, brightness: 0.564, opacity: 0.327))
             }
             .disabled(!triviaManager.answerSelected)
-            Spacer()
+            //Spacer()
             
         }
         .padding()

@@ -17,6 +17,7 @@ struct TriviaView: View {
                 Text("Trivia Game")
                     .lilacTitle()
                 Text("Congratulations, you completed the game!")
+                    
                 Text("You scored \(triviaManager.score) out of \(triviaManager.length)")
                 Button {
                     Task.init {
